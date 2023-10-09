@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Chr=Chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Noticias - Bootstrap</title>
+    <link rel="stylesheet" href="./lib/bootdtrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Site de Noticias</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#carousel-destaque">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#noticias">Notícias</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container" div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <div id="carousel-destaque" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://s2-home-globo.glbimg.com/ihRFL7mnqmPuG3DE3Lde0wG-0sk=/0x365:5518x3470/fit-in/629x354/middle/smart/filters:strip_icc():strip_exif():format(webp)/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/S/v/sfDYYWSXqxn81Z1nwZwQ/gettyimages-1447953790.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Tite deve assinar hoje com o Fla e dar o primeiro treino já amanhã</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://s2-home-globo.glbimg.com/chtY5j-M0b6m6i0KL64509ov5aU=/98x80:821x486/fit-in/629x354/middle/smart/filters:strip_icc():strip_exif():format(webp)/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/O/a/jvUAYTRXKrf0xRiySsBw/8-10-5.png" />
+                    <div class="carousel-caption">
+                        <h2>'Elas por Elas': Jonas larga Helena e dá ‘primeiro’ beijo em Adriana</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100 " src="https://s2-home-globo.glbimg.com/Dbqwlw_-ptknP97nOnw5jEwVLl8=/50x96:1537x934/fit-in/629x354/middle/smart/filters:strip_icc():strip_exif():format(webp)/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/9/2/UuNw8JQHqTnTLLW8ZbJA/09op4.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Dois helicópteros no Rio são atingidos em ação contra facção</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-destaque" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-destaque" data-bs-slide="next" class="carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-destaque" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-destaque" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-destaque" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <section id="noticias">
+            <h2>Notícias</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                        <header class="card-header">
+                            Mundo
+                        </header>
+                        <img src="https://s2-home-globo.glbimg.com/f3oZshrISThPoODD3M1_syfnBLE=/0x0:1024x576/fit-in/629x354/middle/smart/filters:strip_icc():strip_exif():format(webp)/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/M/q/LwtrclQfqgV41iEcEHnQ/2021-05-20t233234z-1331791051-rc2zjn9ezu5b-rtrmadp-3-israel-palestinians.jpg" />
+                        <div class="card-body">
+                            <h4 class="card-title">Entenda a diferença entre israelenses, palestinos e o Hamas</h4>
+                            <p class="card-text">
+                                O mais recente conflito entre Israel e o Hamas, que entrou no segundo dia neste domingo (8), expõe um impasse entre grupos diferentes que se estende por décadas. Há mais de 70 anos, a região vive uma disputa por territórios, que já resultou em enfrentamentos armados e mortes
+                            </p>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>09/10/2023 às 10:00:00</time>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                        <header class="card-header">
+                            Entreterimento
+                        </header>
+                        <img src="https://s2-quem.glbimg.com/SOvXllIZMDUEFn5cCHpNb4HzcpQ=/0x0:1200x678/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_b0f0e84207c948ab8b8777be5a6a4395/internal_photos/bs/2023/h/N/NK1jm0RGGAGY37yM6UqA/chairello.jpg" />
+                        <div class="card-body">
+                            <h4 class="card-title">Chef de cozinha e apresentador Michael Chiarello morre após reação alérgica</h4>
+                            <p class="card-text">
+                                O famoso chef de cozinha e apresentador do Food Network Michael Chiarello morreu, aos 61 anos de idade, na última sexta-feira (6), após um choque anafilático causado por uma alergia. A informação é do site TheWrap, que divulgou um comunicado da família de Chiarello confirmando a morte dele. Não foram informados mais detalhes do que teria causado a grave reação alérgica.
+                            </p>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>09/10/2023 às 10:00:00</time>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                        <header class="card-header">
+                            Esportes
+                        </header>
+                        <img src="https://s2-ge.glbimg.com/CacXKzY-gnNmF1AhPZ3AtMwlLlU=/0x0:3037x1991/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/n/k/QEcCdfT6aOE8QML3aIOg/mdj6188.jpg" />
+                        <div class="card-body">
+                            <h4 class="card-title">Darlan se firma e brinca em meio à disputa com irmão: "Manda tomar cuidado"</h4>
+                            <p class="card-text">
+                                Por pouco, Darlan nem estaria ali. Confirmado no grupo às vésperas do Pré-Olímpico, após o pedido de dispensa de Felipe Roque, o oposto aproveitou muito bem a chance. Aos 21 anos, ganhou a torcida e se transformou em referência ofensiva do Brasil dentro de quadra. E tudo isso em meio à disputa com o irmão, Alan, por um lugar entre os titulares.
+                            </p>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>09/10/2023 às 10:00:00</time>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                        <header class="card-header">
+                            Saúde
+                        </header>
+                        <img src="https://s2-oglobo.glbimg.com/_n5R-dSppw3XiIigm2vZ4ch4QA0=/0x471:2880x2759/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/T/L/mhMpJbQwSSilfME8kG0w/sci-coffee-risks.jpg" />
+                        <div class="card-body">
+                            <h4 class="card-title">Quanto café por dia é muito café? Especialistas apontam o limite</h4>
+                            <p class="card-text">
+                                O café pode ser muitas coisas: um ritual matinal, uma tradição cultural, um hack de produtividade e até uma bebida saudável. Estudos sugerem, por exemplo, que os consumidores de café vivem mais e têm menores riscos de diabetes tipo 2, doença de Parkinson, doenças cardiovasculares e alguns tipos de câncer.
+                            </p>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>09/10/2023 às 10:00:00</time>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                        <header class="card-header">
+                            Tecnologia
+                        </header>
+                        <img src="https://s2-techtudo.glbimg.com/TQde7w4Ja6I8NSRPFBHmgoegnoA=/0x0:4252x2815/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/W/8/aEBcS3QKCUMGj7zBdr3A/gettyimages-1038652778.jpg" />
+                        <div class="card-body">
+                            <h4 class="card-title">Aplicativo para ganhar dinheiro com nota fiscal: veja 3 opções</h4>
+                            <p class="card-text">
+                                Aplicativos para ganhar dinheiro com nota fiscal oferecem boas oportunidades para economizar ao fazer compras. Plataformas como PicPay, Méliuz e Mimocash permitem que usuários recebam parte do dinheiro gasto ao comprar produtos em supermercados, farmácias e demais estabelecimentos comerciais parceiros. O procedimento é bem simples: basta se inscrever em uma campanha disponível nos apps e ler o QR Code impresso na nota fiscal. A seguir, conheça como funcionam os programas que ajudam a receber cashback com o comprovante de pagamento.
+                            </p>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>09/10/2023 às 10:00:00</time>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <article class="card">
+                        <header class="card-header">
+                            Festa
+                        </header>
+                        <img src="https://s2-gshow.glbimg.com/7AmmLNAdHNPbDxXmPaNkz0gqEAA=/0x0:1600x900/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2023/2/k/eDgPi4TdOXS2PlhUFQJA/tomorrowland.jpg" />
+                        <div class="card-body">
+                            <h4 class="card-title">Tomorrowland Brasil: o que pode e o que não pode levar para o festival</h4>
+                            <p class="card-text">
+                                O Tomorrowland Brasil está chegando! Faltando apenas três dias para o festival de música eletrônica, que tem uma edição no país há sete anos, está na hora de você começar a montar seu "kit sobrevivência" para participar do evento. E, para isso, é preciso saber o que pode e o que não pode levar para a festa.
+                            </p>
+                            <a href="#" class="btn btn-primary">Leia mais</a>
+                        </div>
+                        <footer class="card-footer">
+                            Postado em <time>09/10/2023 às 10:00:00</time>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
